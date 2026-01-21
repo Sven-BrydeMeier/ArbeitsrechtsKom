@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Datenbank & Benutzerdaten (DSGVO!)
+*.db
+*.sqlite
+data/
+users.json
+
+# Uploads (Mandantendaten - DSGVO!)
+uploads/
+*.pdf
+*.docx
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+```
+
+4. Klicke **"Commit new file"**
+
+---
+
+## Der Ordner mit geschweiften Klammern
+
+Du meinst diesen: `{modules,pages,.streamlit,data,templates}/`
+
+**Das ist ein Fehler** - den brauchst du **NICHT**! 🚫
+
+Das ist ein leerer Platzhalter-Ordner, der versehentlich in der ZIP gelandet ist. 
+
+### Was du auf GitHub brauchst:
+```
+arbeitsrechtskom/
+├── .gitignore              ← Erstellen (wie oben)
+├── .streamlit/             ← Erstellen
+│   └── config.toml
+├── app.py
+├── requirements.txt
+├── README.md
+├── INSTALLATION.md
+├── LICENSE
+├── modules/                ← Hochladen
+│   └── (11 .py Dateien)
+└── pages/                  ← Hochladen
+    └── (6 .py Dateien)
