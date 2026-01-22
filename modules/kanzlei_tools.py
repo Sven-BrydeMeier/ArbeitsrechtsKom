@@ -10,7 +10,7 @@ Version: 2.0.0
 
 from datetime import datetime, date
 from dataclasses import dataclass, field
-from typing import List, Dict, Optional, Set
+from typing import List, Dict, Optional, Set, Tuple
 from enum import Enum
 import re
 
